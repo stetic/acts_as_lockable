@@ -4,7 +4,8 @@ class CreateLocks < ActiveRecord::Migration
       t.integer :locked_id
       t.string :locked_type
       t.text :desc
-
+      t.datetime :timeout
+      t.integer :user_id
       t.timestamps
     end
   end
